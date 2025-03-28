@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Images/storecraft logo.png" alt="Storecraft Logo">
+        <h1>Web Store</h1>
+        <nav>
+            <a href="#" class="active">Featured</a>
+            <a href="#">Item Boxes</a>
+            <a href="#">PokéCoins</a>
+            <a href="#">Daily Bundles</a>
+            <a href="#plushies">Plushies</a>
+        </nav>
+            <button class="sign-in">Sign In</button>
+    </header>
+
+    <div class="promo-banner">
+        <p>15% discount for your first Web Store purchase on any item $9.99 or more!</p>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Discover exclusive offers and get the best value on PokéCoins on the Storecraft Web Store!</h2>
+        </div>
+    </section>
+
+    <div class="filter-container">
+        <h2>Filter</h2>
+        <div class="price-filter">
+            <span>$</span>
+            <input type="text" id="minPrice" placeholder="Min">
+            <span>to</span>
+            <input type="text" id="maxPrice" placeholder="Max">
+        </div>
+        <button onclick="filterProducts()">Apply</button>
+    </div>
+
+    <main>
+        <section class="featured">
+            <div class="featured-box">
+                <span class="badge">FEATURED</span>
+                <h2>Pokémon GO Fest 2025: Global Ticket</h2>
+                <p>Can only be purchased 1 time.</p>
+                <button class="price">₱439.00</button>
+                <img src="golden-box.png" alt="Golden Gift Box">
+            </div>
+        </section>
+        
+        <section class="products">
+            <div class="product">
+                <span class="label">ONE TIME ONLY</span>
+                <img src="box1.png" alt="Box 1">
+                <h2>Fuzzy Buddy Research Day Ultra Ticket Box</h2>
+                <p>Can only be purchased 1 time.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <span class="label">ONE TIME ONLY</span>
+                <img src="box2.png" alt="Box 2">
+                <h2>Bug Out Ultra Ticket Box</h2>
+                <p>Can only be purchased 1 time.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <span class="label">ONE TIME ONLY</span>
+                <img src="box3.png" alt="Box 3">
+                <h2>Power Up Ticket Ultra Ticket Box</h2>
+                <p>Can only be purchased 1 time.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <span class="label limited">LIMITED-TIME ONLY</span>
+                <img src="box4.png" alt="Box 4">
+                <h2>GO Rocket Box</h2>
+                <p>Can only be purchased 1 time.</p>
+                <button>Buy Now</button>
+            </div>
+        </section>
+    </main>
+
+    <section id="plushies">
+    <section class="products">
+            <h2>Pokémon Plushies</h2>
+        <div class="product">
+            <img src="Images/pikachu.png" alt="Pikachu">
+            <h2>Pikachu Plush</h2>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/charizard.png" alt="Charizard">
+            <h2>Charizard Figure</h2>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/pokeball.png" alt="Pokéball">
+            <h2>Pokéball</h2>
+            <p>$9.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/bulbasaur.png" alt="Bulbasaur">
+            <h2>Bulbasaur Plush</h2>
+            <p>$18.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/eevee.png" alt="Eevee">
+            <h2>Eevee Plush</h2>
+            <p>$21.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/mewtwo.png" alt="Mewtwo">
+            <h2>Mewtwo Action Figure</h2>
+            <p>$34.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/snorlax.png" alt="Snorlax">
+            <h2>Snorlax Plush</h2>
+            <p>$24.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/gengar.png" alt="Gengar">
+            <h2>Gengar Plush</h2>
+            <p>$22.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/jigglypuff.png" alt="Jigglypuff">
+            <h2>Jigglypuff Plush</h2>
+            <p>$17.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/squirtle.png" alt="Squirtle">
+            <h2>Squirtle Plush</h2>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/charmander.png" alt="Charmander">
+            <h2>Charmander Plush</h2>
+            <p>$19.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/lucario.png" alt="Lucario">
+            <h2>Lucario Figure</h2>
+            <p>$28.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/togepi.png" alt="Togepi">
+            <h2>Togepi Plush</h2>
+            <p>$20.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/psyduck.png" alt="Psyduck">
+            <h2>Psyduck Plush</h2>
+            <p>$18.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/vulpix.png" alt="Vulpix">
+            <h2>Vulpix Plush</h2>
+            <p>$21.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/vapereon.png" alt="Vaporeon">
+            <h2>Vaporeon Plush</h2>
+            <p>$21.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/ditto.png" alt="Ditto">
+            <h2>Ditto Plush</h2>
+            <p>$22.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/gardevoir.png" alt="Gardevoir">
+            <h2>Gardevoir Plush</h2>
+            <p>$22.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/greninja.png" alt="Greninja">
+            <h2>Greninja Plush</h2>
+            <p>$22.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/dragonite.png" alt="Dragonite">
+            <h2>Dragonite Plush</h2>
+            <p>$22.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/mimikyu.png" alt="Mimikyu">
+            <h2>Mimikyu Plush</h2>
+            <p>$22.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/mew.png" alt="Mew">
+            <h2>Mew Plush</h2>
+            <p>$22.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/geodude.png" alt="Geodude">
+            <h2>Geodude Plush</h2>
+            <p>$22.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="Images/Meowth.png" alt="Meowth">
+            <h2>Meowth Plush</h2>
+            <p>$22.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+</section>
+    
+    <footer>
+        <p>&copy; 2025 Pokémon Store. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        function filterProducts() {
+            let minPrice = parseFloat(document.getElementById("minPrice").value) || 0;
+            let maxPrice = parseFloat(document.getElementById("maxPrice").value) || Infinity;
+            let products = document.querySelectorAll(".product");
+    
+            products.forEach(product => {
+                let priceText = product.querySelector("p").textContent;
+                let price = parseFloat(priceText.replace("$", "").trim()); 
+    
+                if (price >= minPrice && price <= maxPrice) {
+                    product.style.display = "block";
+                } else {
+                    product.style.display = "none";
+                }
+            
+            });
+
+// Filter function
+function filterProducts() {
+    let minPrice = parseFloat(document.getElementById("minPrice").value) || 0;
+    let maxPrice = parseFloat(document.getElementById("maxPrice").value) || Infinity;
+    let products = document.querySelectorAll(".product");
+
+    products.forEach(product => {
+        let priceText = product.querySelector("p").textContent;
+        let price = parseFloat(priceText.replace("$", "").trim()); 
+
+        if (price >= minPrice && price <= maxPrice) {
+            product.style.display = "block";
+        } else {
+            product.style.display = "none";
+        }
+    });
+}
+        }
+
+    </script>
+    
+</body>
+</html>
+
