@@ -11,10 +11,8 @@
         <img src="Images/storecraft logo.png" alt="Storecraft Logo">
         <h1>Web Store</h1>
         <nav>
-            <a href="#" class="active">Featured</a>
-            <a href="#">Item Boxes</a>
-            <a href="#">PokéCoins</a>
-            <a href="#">Daily Bundles</a>
+            <a href="#item-box">Item Boxes</a>
+            <a href="#pokecoins">PokéCoins</a>
             <a href="#plushies">Plushies</a>
         </nav>
             <button class="sign-in">Sign In</button>
@@ -41,229 +39,268 @@
         <button onclick="filterProducts()">Apply</button>
     </div>
 
+    <div class="filter-section">
+        <label for="category">Filter by Category:</label>
+        <select id="category">
+            <option value="all">All</option>
+            <option value="plushies">Plushies</option>
+            <option value="pokecoins">PokéCoins</option>
+            <option value="itembox">Item Box</option>
+        </select>
+    </div>
+     </div>
+
     <main>
         <section class="featured">
             <div class="featured-box">
                 <span class="badge">FEATURED</span>
-                <h2>Pokémon GO Fest 2025: Global Ticket</h2>
+                <h2>Pokémon Trading Card</h2>
                 <p>Can only be purchased 1 time.</p>
                 <button class="price">₱439.00</button>
-                <img src="golden-box.png" alt="Golden Gift Box">
+                <img src="Images/pokemon-trading-card.png" alt="trading Card">
             </div>
         </section>
         
+        <h2 id="item-box">Item Box</h2>
         <section class="products">
-            <div class="product">
+            <div class="item-box">
                 <span class="label">ONE TIME ONLY</span>
-                <img src="box1.png" alt="Box 1">
+                <img src="Images/bundle.png" alt="Box 1">
                 <h2>Fuzzy Buddy Research Day Ultra Ticket Box</h2>
                 <p>Can only be purchased 1 time.</p>
                 <button>Buy Now</button>
             </div>
-            <div class="product">
+            <div class="item-box">
                 <span class="label">ONE TIME ONLY</span>
-                <img src="box2.png" alt="Box 2">
-                <h2>Bug Out Ultra Ticket Box</h2>
+                <img src="Images/Global_Ticket.png" alt="Box 2">
+                <h2>Global Ticket Box</h2>
                 <p>Can only be purchased 1 time.</p>
                 <button>Buy Now</button>
             </div>
-            <div class="product">
+            <div class="item-box">
                 <span class="label">ONE TIME ONLY</span>
-                <img src="box3.png" alt="Box 3">
-                <h2>Power Up Ticket Ultra Ticket Box</h2>
+                <img src="Images/Might and Mystery.png" alt="Box 3">
+                <h2>Might and Mystery Ticket Box</h2>
                 <p>Can only be purchased 1 time.</p>
                 <button>Buy Now</button>
             </div>
-            <div class="product">
-                <span class="label limited">LIMITED-TIME ONLY</span>
-                <img src="box4.png" alt="Box 4">
+            <div class="item-box">
+                <span class="label limited">ONE TIME ONLY</span>
+                <img src="Images/Go-Rocket.png" alt="Box 4">
                 <h2>GO Rocket Box</h2>
                 <p>Can only be purchased 1 time.</p>
                 <button>Buy Now</button>
             </div>
         </section>
+
+            <h2 id="pokecoins">PokéCoins</h2>
+            <section class="products">
+                <div class="pokecoin-box">
+                    <img src="Images/pokecoins_150.png" alt="150 PokéCoins">
+                    <h2>150 PokéCoins</h2>
+                    <p>$4.99</p>
+                    <button>Buy Now</button>
+                </div>
+    <div class="pokecoin-box">
+        <img src="Images/pokecoins_550.png" alt="550 PokéCoins">
+        <h2>550 PokéCoins</h2>
+        <p>$7.99</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="pokecoin-box">
+        <img src="Images/pokecoins_1200.png" alt="1,200 PokéCoins">
+        <h2>1,200 PokéCoins</h2>
+        <p>$14.99</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="pokecoin-box">
+        <img src="Images/pokecoins_2500.png" alt="2,500 PokéCoins">
+        <h2>2,500 PokéCoins</h2>
+        <p>$22.99</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="pokecoin-box">
+        <img src="Images/pokecoins_5350.png" alt="5,350 PokéCoins">
+        <h2>5,350 PokéCoins</h2>
+        <p>$39.99</p>
+        <button>Buy Now</button>
+    </div>
+    <div class="pokecoin-box">
+        <img src="Images/pokecoins_14500.png" alt="14,500 PokéCoins">
+        <h2>14,500 PokéCoins</h2>
+        <p>$99.99</p>
+        <button>Buy Now</button>
+    </div>
+        </section>
     </main>
 
-    <section id="plushies">
+    <h2 id="plushies">Pokémon Plushies</h2>
+    <p>Check out our collection of Pokémon plushies! Perfect for collectors and fans alike.</p>
     <section class="products">
-            <h2>Pokémon Plushies</h2>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/pikachu.png" alt="Pikachu">
             <h2>Pikachu Plush</h2>
             <p>$19.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/charizard.png" alt="Charizard">
-            <h2>Charizard Figure</h2>
+            <h2>Charizard Plush</h2>
             <p>$29.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/pokeball.png" alt="Pokéball">
-            <h2>Pokéball</h2>
+            <h2>Pokéball Plush</h2>
             <p>$9.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/bulbasaur.png" alt="Bulbasaur">
             <h2>Bulbasaur Plush</h2>
             <p>$18.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/eevee.png" alt="Eevee">
             <h2>Eevee Plush</h2>
             <p>$21.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/mewtwo.png" alt="Mewtwo">
-            <h2>Mewtwo Action Figure</h2>
+            <h2>Mewtwo Plush</h2>
             <p>$34.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/snorlax.png" alt="Snorlax">
             <h2>Snorlax Plush</h2>
             <p>$24.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/gengar.png" alt="Gengar">
             <h2>Gengar Plush</h2>
             <p>$22.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/jigglypuff.png" alt="Jigglypuff">
             <h2>Jigglypuff Plush</h2>
             <p>$17.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/squirtle.png" alt="Squirtle">
             <h2>Squirtle Plush</h2>
             <p>$19.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/charmander.png" alt="Charmander">
             <h2>Charmander Plush</h2>
             <p>$19.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/lucario.png" alt="Lucario">
-            <h2>Lucario Figure</h2>
+            <h2>Lucario Plush</h2>
             <p>$28.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/togepi.png" alt="Togepi">
             <h2>Togepi Plush</h2>
             <p>$20.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/psyduck.png" alt="Psyduck">
             <h2>Psyduck Plush</h2>
             <p>$18.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/vulpix.png" alt="Vulpix">
             <h2>Vulpix Plush</h2>
             <p>$21.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/vapereon.png" alt="Vaporeon">
             <h2>Vaporeon Plush</h2>
             <p>$21.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/ditto.png" alt="Ditto">
             <h2>Ditto Plush</h2>
             <p>$22.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/gardevoir.png" alt="Gardevoir">
             <h2>Gardevoir Plush</h2>
             <p>$22.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/greninja.png" alt="Greninja">
             <h2>Greninja Plush</h2>
             <p>$22.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/dragonite.png" alt="Dragonite">
             <h2>Dragonite Plush</h2>
             <p>$22.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/mimikyu.png" alt="Mimikyu">
             <h2>Mimikyu Plush</h2>
             <p>$22.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/mew.png" alt="Mew">
             <h2>Mew Plush</h2>
             <p>$22.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/geodude.png" alt="Geodude">
             <h2>Geodude Plush</h2>
             <p>$22.99</p>
             <button>Add to Cart</button>
         </div>
-        <div class="product">
+        <div class="plushies">
             <img src="Images/Meowth.png" alt="Meowth">
             <h2>Meowth Plush</h2>
             <p>$22.99</p>
             <button>Add to Cart</button>
         </div>
+        </div>
     </section>
 </section>
     
     <footer>
-        <p>&copy; 2025 Pokémon Store. All rights reserved.</p>
+        <p>&copy; 2025 StoreCraft. All rights reserved.</p>
     </footer>
     
     <script>
-        function filterProducts() {
-            let minPrice = parseFloat(document.getElementById("minPrice").value) || 0;
-            let maxPrice = parseFloat(document.getElementById("maxPrice").value) || Infinity;
-            let products = document.querySelectorAll(".product");
-    
-            products.forEach(product => {
-                let priceText = product.querySelector("p").textContent;
-                let price = parseFloat(priceText.replace("$", "").trim()); 
-    
-                if (price >= minPrice && price <= maxPrice) {
-                    product.style.display = "block";
-                } else {
-                    product.style.display = "none";
-                }
-            
-            });
 
-// Filter function
+
+
 function filterProducts() {
     let minPrice = parseFloat(document.getElementById("minPrice").value) || 0;
     let maxPrice = parseFloat(document.getElementById("maxPrice").value) || Infinity;
-    let products = document.querySelectorAll(".product");
+    
+    let products = document.querySelectorAll(".item-box, .pokecoin-box, .plushies");
 
     products.forEach(product => {
-        let priceText = product.querySelector("p").textContent;
+        let priceText = product.querySelector("p") ? product.querySelector("p").textContent : "";
         let price = parseFloat(priceText.replace("$", "").trim()); 
 
         if (price >= minPrice && price <= maxPrice) {
@@ -273,7 +310,47 @@ function filterProducts() {
         }
     });
 }
-        }
+
+document.getElementById('category').addEventListener('change', function() {
+    var filterValue = this.value;
+
+    var allSections = document.querySelectorAll('.products > div');
+    allSections.forEach(function(section) {
+        section.style.display = 'none';
+    });
+
+    if (filterValue === 'plushies') {
+        document.querySelectorAll('.plushies').forEach(function(section) {
+            section.style.display = 'block';
+        });
+    } else if (filterValue === 'pokecoins') {
+        document.querySelectorAll('.pokecoin-box').forEach(function(section) {
+            section.style.display = 'block';
+        });
+    } else if (filterValue === 'itembox') {
+        document.querySelectorAll('.item-box').forEach(function(section) {
+            section.style.display = 'block';
+        });
+    } else {
+
+        allSections.forEach(function(section) {
+            section.style.display = 'block';
+        });
+    }
+});
+
+window.addEventListener('load', function() {
+    document.querySelectorAll('.plushies').forEach(function(section) {
+        section.style.display = 'block';
+    });
+    document.querySelectorAll('.pokecoin-box').forEach(function(section) {
+        section.style.display = 'block';
+    });
+    document.querySelectorAll('.item-box').forEach(function(section) {
+        section.style.display = 'block';
+    });
+});
+
 
     </script>
     
